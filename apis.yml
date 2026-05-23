@@ -1,0 +1,160 @@
+aid: linear-app
+name: Linear
+description: Linear is an issue tracking and product development platform for software teams covering Intake, Plan, Build, Diffs (code review), and Monitor. The public developer surface is a GraphQL API at https://api.linear.app/graphql with OAuth 2.0 and personal API key auth, signed webhooks, a TypeScript SDK, an Agent SDK / Agent Interaction Guidelines for AI agents, and integrations with GitHub, Slack, Figma, Cursor, Codex, GitHub Copilot, and others. Serves 25,000+ product teams.
+image: https://linear.app/static/og/homepage.jpg
+tags:
+  - Project Management
+  - Issue Tracking
+  - Productivity
+  - SaaS
+  - GraphQL
+  - Developer Tools
+  - Agents
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.18'
+position: Consuming
+kind: contract
+access: 3rd-Party
+apis:
+  - aid: linear-app:linear-graphql-api
+    name: Linear GraphQL API
+    description: Single GraphQL endpoint exposing Linear's full data model - issues, projects, initiatives, cycles, teams, users, comments, documents, customers, customer requests, and more. Auth via OAuth 2.0 Bearer or personal API key. Schema is introspectable and explorable via Apollo Studio.
+    tags:
+      - GraphQL
+      - Issues
+      - Projects
+      - Teams
+      - Cycles
+      - Comments
+    properties:
+      - url: https://linear.app/developers/graphql
+        type: Documentation
+      - url: https://linear.app/developers
+        type: APIReference
+      - url: https://api.linear.app/graphql
+        type: BaseURL
+      - url: https://linear.app/developers/oauth-2-0-authentication
+        type: Authentication
+  - aid: linear-app:linear-webhooks
+    name: Linear Webhooks
+    description: Outbound webhooks for data-change events across Issues, Issue attachments, Issue comments, Issue labels, Comment reactions, Projects, Project updates, Documents, Initiatives, Initiative updates, Cycles, Customers, Customer Requests, Users, plus Issue SLA and OAuthApp revoked. Payloads are signed with HMAC-SHA256 in the Linear-Signature header.
+    tags:
+      - Webhooks
+      - Events
+      - Async
+    properties:
+      - url: https://linear.app/developers/webhooks
+        type: Documentation
+      - url: https://linear.app/settings/api
+        type: Configuration
+  - aid: linear-app:linear-oauth
+    name: Linear OAuth 2.0
+    description: OAuth 2.0 authorization-code and PKCE flows for third-party apps. Authorize at https://linear.app/oauth/authorize, exchange tokens at https://api.linear.app/oauth/token. Scopes include read, write, issues:create, comments:create, timeSchedule:write, and admin.
+    tags:
+      - OAuth
+      - Authentication
+      - Authorization
+    properties:
+      - url: https://linear.app/developers/oauth-2-0-authentication
+        type: Documentation
+      - url: https://linear.app/oauth/authorize
+        type: AuthorizationURL
+      - url: https://api.linear.app/oauth/token
+        type: TokenURL
+  - aid: linear-app:linear-agents-api
+    name: Linear Agents API
+    description: Capabilities for AI agents to operate as first-class actors inside Linear - Agent Interaction Guidelines (AIG), signals, and best-practice patterns for interacting with users and issues.
+    tags:
+      - Agents
+      - AI
+      - Automation
+    properties:
+      - url: https://linear.app/developers/agents
+        type: Documentation
+common:
+  - url: https://linear.app
+    type: Website
+  - url: https://linear.app/signup
+    type: SignUp
+  - url: https://linear.app/login
+    type: Login
+  - url: https://linear.app/docs
+    type: Documentation
+  - url: https://linear.app/developers
+    type: APIReference
+  - url: https://linear.app/developers/graphql
+    type: APIReference
+  - url: https://linear.app/developers/oauth-2-0-authentication
+    type: Authentication
+  - url: https://linear.app/developers/sdk
+    type: SDK
+  - url: https://linear.app/developers/webhooks
+    type: Webhooks
+  - url: https://linear.app/developers/agents
+    type: Agents
+  - url: https://linear.app/developers/rate-limiting
+    type: RateLimits
+  - url: https://linearstatus.com/
+    type: StatusPage
+  - url: https://linear.app/pricing
+    type: Pricing
+  - url: https://linear.app/enterprise
+    type: Enterprise
+  - url: https://linear.app/startups
+    type: Startups
+  - url: https://linear.app/contact/sales
+    type: Sales
+  - url: https://linear.app/security
+    type: Security
+  - url: https://linear.app/privacy
+    type: PrivacyPolicy
+  - url: https://linear.app/terms
+    type: TermsOfService
+  - url: https://linear.app/dpa
+    type: DPA
+  - url: https://linear.app/integrations
+    type: Integrations
+  - url: https://linear.app/changelog
+    type: ChangeLog
+  - url: https://linear.app/blog
+    type: Blog
+  - url: https://linear.app/join-slack
+    type: Slack
+  - url: https://github.com/linear
+    type: GitHubOrganization
+  - url: https://github.com/linear/linear
+    type: SourceCode
+  - url: https://x.com/linear
+    type: X (Twitter)
+  - url: https://www.youtube.com/@linear
+    type: YouTube
+  - url: https://linear.app/settings/api
+    type: APIKeys
+  - type: Features
+    data:
+      - GraphQL API at https://api.linear.app/graphql with full introspection
+      - OAuth 2.0 with PKCE plus personal API key auth
+      - Strongly-typed TypeScript SDK (v2.x) with webhook helpers
+      - HMAC-SHA256 signed webhooks via Linear-Signature header
+      - 15+ webhook resource types (Issues, Projects, Initiatives, Cycles, Customers, etc.)
+      - Apollo Studio playground for live schema exploration
+      - Agents framework with Agent Interaction Guidelines
+      - Native integrations with GitHub, Slack, Figma, Sentry, Zendesk
+      - AI agent integrations including Codex, GitHub Copilot, Cursor
+      - Triage inbox for routing intake into actionable issues
+      - Diffs for structural code review visualization
+      - Mobile apps for iOS and Android
+      - 25,000+ product teams using Linear
+    sources:
+      - https://linear.app
+      - https://linear.app/developers
+      - https://linear.app/developers/graphql
+    updated: '2026-05-23'
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+  - FN: APIs.json
+    email: info@apis.io
+  - name: Linear
+    url: https://linear.app
