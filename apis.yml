@@ -151,6 +151,8 @@ common:
       - https://linear.app/developers
       - https://linear.app/developers/graphql
     updated: '2026-05-23'
+  - type: LLMsTxt
+    url: https://linear.app/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
