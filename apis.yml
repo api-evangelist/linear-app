@@ -78,7 +78,7 @@ common:
 - url: https://linear.app
   type: Website
 - url: https://linear.app/signup
-  type: SignUp
+  type: Signup
 - url: https://linear.app/login
   type: Login
 - url: https://linear.app/docs
@@ -90,7 +90,7 @@ common:
 - url: https://linear.app/developers/oauth-2-0-authentication
   type: Authentication
 - url: https://linear.app/developers/sdk
-  type: SDK
+  type: SDKs
 - url: https://linear.app/developers/webhooks
   type: Webhooks
 - url: https://linear.app/developers/agents
@@ -153,7 +153,7 @@ common:
   - https://linear.app/developers
   - https://linear.app/developers/graphql
   updated: '2026-05-23'
-- type: LLMsTxt
+- type: LlmsText
   url: https://linear.app/llms.txt
 maintainers:
 - FN: Kin Lane
