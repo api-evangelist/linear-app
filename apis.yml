@@ -75,6 +75,12 @@ apis:
   - url: https://linear.app/developers/agents
     type: Documentation
 common:
+- type: TrustCenter
+  url: security/linear-app-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/linear-app-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/linear-app-domain-security.yml
 - url: https://linear.app
   type: Website
 - url: https://linear.app/signup
