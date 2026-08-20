@@ -18,6 +18,14 @@ tags:
 - Project Management
 - Issue Tracking
 - Productivity
+- Software-as-a-Service
+- GraphQL
+- Developer Tools
+- Agents
+tags_raw:
+- Project Management
+- Issue Tracking
+- Productivity
 - SaaS
 - GraphQL
 - Developer Tools
@@ -33,6 +41,13 @@ apis:
   name: Linear GraphQL API
   description: Single GraphQL endpoint exposing Linear's full data model - issues, projects, initiatives, cycles, teams, users, comments, documents, customers, customer requests, and more. Auth via OAuth 2.0 Bearer or personal API key. Schema is introspectable and explorable via Apollo Studio.
   tags:
+  - GraphQL
+  - Issues
+  - Project
+  - Team
+  - Cycles
+  - Comments
+  tags_raw:
   - GraphQL
   - Issues
   - Projects
@@ -54,6 +69,10 @@ apis:
   name: Linear Webhooks
   description: Outbound webhooks for data-change events across Issues, Issue attachments, Issue comments, Issue labels, Comment reactions, Projects, Project updates, Documents, Initiatives, Initiative updates, Cycles, Customers, Customer Requests, Users, plus Issue SLA and OAuthApp revoked. Payloads are signed with HMAC-SHA256 in the Linear-Signature header.
   tags:
+  - Webhook
+  - Event
+  - Async
+  tags_raw:
   - Webhooks
   - Events
   - Async
@@ -66,6 +85,9 @@ apis:
   name: Linear OAuth 2.0
   description: OAuth 2.0 authorization-code and PKCE flows for third-party apps. Authorize at https://linear.app/oauth/authorize, exchange tokens at https://api.linear.app/oauth/token. Scopes include read, write, issues:create, comments:create, timeSchedule:write, and admin.
   tags:
+  - Authentication
+  - Authorization
+  tags_raw:
   - OAuth
   - Authentication
   - Authorization
@@ -80,6 +102,10 @@ apis:
   name: Linear Agents API
   description: Capabilities for AI agents to operate as first-class actors inside Linear - Agent Interaction Guidelines (AIG), signals, and best-practice patterns for interacting with users and issues.
   tags:
+  - Agents
+  - Artificial Intelligence
+  - Automation
+  tags_raw:
   - Agents
   - AI
   - Automation
