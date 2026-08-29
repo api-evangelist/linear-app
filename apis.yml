@@ -1,6 +1,18 @@
 aid: linear-app
 name: Linear
 description: Linear is an issue tracking and product development platform for software teams covering Intake, Plan, Build, Diffs (code review), and Monitor. The public developer surface is a GraphQL API at https://api.linear.app/graphql with OAuth 2.0 and personal API key auth, signed webhooks, a TypeScript SDK, an Agent SDK / Agent Interaction Guidelines for AI agents, and integrations with GitHub, Slack, Figma, Cursor, Codex, GitHub Copilot, and others. Serves 25,000+ product teams.
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: true
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - pricing
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: unknown
