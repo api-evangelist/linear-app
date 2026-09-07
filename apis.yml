@@ -218,3 +218,5 @@ maintainers:
   email: info@apis.io
 - name: Linear
   url: https://linear.app
+x-parent: linear
+x-relationship: product
