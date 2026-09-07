@@ -125,6 +125,10 @@ apis:
   - url: https://linear.app/developers/agents
     type: Documentation
 common:
+- type: AgenticAccess
+  url: agentic-access/linear-app-agentic-access.yml
+- type: OAuthScopes
+  url: scopes/linear-app-scopes.yml
 - type: TrustCenter
   url: security/linear-app-trust-center.yml
 - type: VulnerabilityDisclosure
@@ -218,5 +222,3 @@ maintainers:
   email: info@apis.io
 - name: Linear
   url: https://linear.app
-x-parent: linear
-x-relationship: product
