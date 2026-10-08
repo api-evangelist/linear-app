@@ -130,6 +130,10 @@ apis:
   - url: https://linear.app/developers/agents
     type: Documentation
 common:
+- type: Plans
+  url: plans/linear-app-plans-pricing.yml
+- type: FinOps
+  url: finops/linear-app-finops.yml
 - type: AgenticAccess
   url: agentic-access/linear-app-agentic-access.yml
 - type: OAuthScopes
