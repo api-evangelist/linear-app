@@ -1,30 +1,5 @@
 generated: '2026-10-14'
 edges:
-- partner_name: Hightouch
-  partner: hightouch
-  partner_match: aggregator
-  marketplace: coverage
-  channel: partner-built
-  direction: partner-built
-  type: coverage
-  relationship: connector-coverage
-  evidence: https://hightouch.com/docs/destinations/linear
-  coverage_role:
-  - destination
-  cdp_signals:
-    destination:
-      catalog_entries:
-      - linear
-      status: released
-      sync_types:
-      - Issues
-      sync_modes:
-      - delete
-      - insert
-      - update
-      - upsert
-  detected_by: sweep-cdp.py
-  first_seen: '2026-10-14'
 - partner_name: GitHub Marketplace (apps)
   partner: github
   partner_match: aggregator
@@ -61,10 +36,64 @@ edges:
   - Verified creator
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
+- partner_name: Hightouch
+  partner: hightouch
+  partner_match: aggregator
+  marketplace: coverage
+  channel: partner-built
+  direction: partner-built
+  type: coverage
+  relationship: connector-coverage
+  evidence: https://hightouch.com/docs/destinations/linear
+  coverage_role:
+  - destination
+  cdp_signals:
+    destination:
+      catalog_entries:
+      - linear
+      status: released
+      sync_types:
+      - Issues
+      sync_modes:
+      - delete
+      - insert
+      - update
+      - upsert
+  detected_by: sweep-cdp.py
+  first_seen: '2026-10-14'
+- partner_name: Okta (own)
+  partner: okta
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.okta.com/integrations/integrator-4080826_linear_1/
+  mirror_of: okta/integrations/okta-integration-edges.yml
+  apps:
+  - Linear
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Lifecycle Management
+  badges:
+  - OKTA_VERIFIED
+  features:
+  - CREATE
+  - CROSS_APP_ACCESS
+  - DEACTIVATE
+  - ENTITLEMENT_MANAGEMENT
+  - GROUP_PUSH
+  - SAML
+  - SCHEMA_DISCOVERY
+  - UPDATE
 method: searched
 checked:
 - https://github.com/marketplace?type=actions
 - https://github.com/marketplace?type=apps
 - https://hightouch.com/docs/destinations/linear
+- okta/integrations/okta-integration-edges.yml
 source: https://hightouch.com/docs/destinations/linear
 marketplace_apps: []
