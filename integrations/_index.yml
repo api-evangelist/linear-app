@@ -39,6 +39,19 @@
   relationship: connector-coverage
   status: not-a-workflow
   arazzo: null
+- slug: linear-app-okta-own
+  label: Okta (own)
+  partner: okta
+  partner_name: Okta (own)
+  category: Lifecycle Management
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.okta.com/integrations/integrator-4080826_linear_1/
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
 - slug: linear-app-mcp-registry
   label: MCP Registry
   partner: mcp
@@ -55,19 +68,56 @@
     registered_name: app.linear/linear
     register_id: app.linear/linear
     detected_by: sweep-agent-tools.py
-    detected: '2026-10-14'
+    detected: '2026-10-15'
   status: not-a-workflow
   arazzo: null
-- slug: linear-app-okta-own
-  label: Okta (own)
-  partner: okta
-  partner_name: Okta (own)
-  category: Lifecycle Management
+- slug: linear-app-zapier
+  label: Zapier
+  partner: zapier
+  partner_name: Zapier
   type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://www.okta.com/integrations/integrator-4080826_linear_1/
+  marketplace: zapier-directory
+  channel: ipaas-listing
+  evidence: https://zapier.com/apps/linear/integrations
   source: edge
-  relationship: platform-app
-  status: not-a-workflow
+  relationship: ipaas-bridge
+  contract_reference:
+    register: Zapier app directory (zapier.com/api/v4/apps)
+    spec_file: null
+    role: ipaas-connector:zapier
+    registered_name: Linear
+    matched_domain: linear.app
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    app_slug: linear
+    beta: false
+    builder: unknown (not in the directory record)
+  status: pending-partner-spec
+  arazzo: null
+- slug: linear-app-n8n
+  label: n8n
+  partner: n8n
+  partner_name: n8n
+  type: marketplace
+  marketplace: n8n-nodes-base
+  channel: open-source-node
+  evidence: https://github.com/n8n-io/n8n/tree/860f1273ebd73fabbd668cbec2c49ed9b48a286d/packages/nodes-base/nodes/Linear
+  source: edge
+  relationship: ipaas-bridge
+  contract_reference:
+    register: n8n built-in nodes (n8n-io/n8n packages/nodes-base)
+    spec_file: null
+    role: ipaas-connector:n8n-nodes-base
+    registered_name: Linear
+    matched_domain: linear.app
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    node_path: Linear
+    trigger: true
+    builder: n8n (built-in node)
+  status: pending-partner-spec
   arazzo: null
