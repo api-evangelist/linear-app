@@ -94,7 +94,7 @@
     app_slug: linear
     beta: false
     builder: unknown (not in the directory record)
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: linear-app-n8n
   label: n8n
@@ -119,5 +119,5 @@
     node_path: Linear
     trigger: true
     builder: n8n (built-in node)
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
