@@ -155,7 +155,7 @@
       type: source
       lapsed: false
       cloud: true
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: linear-app-fivetran
   label: Fivetran
@@ -181,7 +181,7 @@
     - connectors/applications/linear
     vendor_link: https://linear.app/
     builder: Fivetran
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: linear-app-meltano
   label: Meltano
@@ -212,7 +212,7 @@
     - gold
     - silver
     builder: 'community (Meltano Hub variant maintainers: getoslash, renesteeman)'
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: linear-app-microsoft-teams-own
   label: Microsoft Teams (own)
