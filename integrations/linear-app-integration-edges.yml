@@ -235,87 +235,6 @@ edges:
     builder: n8n (built-in node)
   detected_by: sweep-workflow-automation.py
   first_seen: '2026-10-15'
-- partner_name: Microsoft Teams (own)
-  partner: microsoft-teams
-  partner_match: mirror
-  mirror_match: domain+product
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://appsource.microsoft.com/en-us/product/office/WA200010301
-  mirror_of: microsoft-teams/integrations/microsoft-teams-integration-edges.yml
-  apps:
-  - Linear
-  listing_count: 1
-  detected: '2026-10-18'
-  detected_by: mirror-platform-listings.py
-  category: Microsoft Teams app
-  publisher_verified:
-  - Microsoft 365 Certified
-- partner_name: Okta (own)
-  partner: okta
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://www.okta.com/integrations/integrator-4080826_linear_1/
-  mirror_of: okta/integrations/okta-integration-edges.yml
-  apps:
-  - Linear
-  listing_count: 1
-  detected: '2026-10-14'
-  detected_by: mirror-platform-listings.py
-  category: Lifecycle Management
-  badges:
-  - OKTA_VERIFIED
-  features:
-  - CREATE
-  - CROSS_APP_ACCESS
-  - DEACTIVATE
-  - ENTITLEMENT_MANAGEMENT
-  - GROUP_PUSH
-  - SAML
-  - SCHEMA_DISCOVERY
-  - UPDATE
-- partner_name: Slack (own)
-  partner: slack
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://slack.com/marketplace/A04RHP43AKH-linear-asks
-  mirror_of: slack/integrations/slack-integration-edges.yml
-  apps:
-  - Linear Asks
-  listing_count: 1
-  detected: '2026-10-18'
-  detected_by: mirror-platform-listings.py
-  category: Slack app
-- partner_name: Zendesk (own)
-  partner: zendesk
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://www.zendesk.com/marketplace/apps/support/431018/linear/
-  mirror_of: zendesk/integrations/zendesk-integration-edges.yml
-  apps:
-  - Linear
-  listing_count: 1
-  detected: '2026-10-20'
-  detected_by: mirror-platform-listings.py
-  category: Product and Project Management
 - partner_name: Agent Skills (own GitHub org)
   partner: null
   partner_match: register
@@ -432,6 +351,143 @@ edges:
     sector: business-applications
   detected_by: sweep-vc-portfolios.py
   first_seen: '2026-10-21'
+- partner_name: Microsoft Teams (own)
+  partner: microsoft-teams
+  partner_match: mirror
+  mirror_match: domain+product
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://appsource.microsoft.com/en-us/product/office/WA200010301
+  mirror_of: microsoft-teams/integrations/microsoft-teams-integration-edges.yml
+  apps:
+  - Linear
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Microsoft Teams app
+  publisher_verified:
+  - Microsoft 365 Certified
+- partner_name: Okta (own)
+  partner: okta
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.okta.com/integrations/integrator-4080826_linear_1/
+  mirror_of: okta/integrations/okta-integration-edges.yml
+  apps:
+  - Linear
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Lifecycle Management
+  badges:
+  - OKTA_VERIFIED
+  features:
+  - CREATE
+  - CROSS_APP_ACCESS
+  - DEACTIVATE
+  - ENTITLEMENT_MANAGEMENT
+  - GROUP_PUSH
+  - SAML
+  - SCHEMA_DISCOVERY
+  - UPDATE
+- partner_name: Slack (own)
+  partner: slack
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://slack.com/marketplace/A04RHP43AKH-linear-asks
+  mirror_of: slack/integrations/slack-integration-edges.yml
+  apps:
+  - Linear Asks
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Slack app
+- partner_name: Zendesk (own)
+  partner: zendesk
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.zendesk.com/marketplace/apps/support/431018/linear/
+  mirror_of: zendesk/integrations/zendesk-integration-edges.yml
+  apps:
+  - Linear
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: Product and Project Management
+- partner_name: Raycast (raycast-store)
+  partner: raycast
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: raycast-store
+  evidence: https://www.raycast.com/linear/linear
+  mirror_of: raycast/integrations/raycast-integration-edges.yml
+  apps:
+  - Linear
+  listing_count: 1
+  detected: '2026-10-22'
+  detected_by: mirror-platform-listings.py
+  category: Raycast Store extension (first-party)
+- partner_name: Obsidian
+  partner: obsidian
+  partner_match: aggregator
+  type: marketplace
+  marketplace: obsidian-community-plugins
+  channel: community-plugin
+  relationship: connector-listing
+  direction: third-party
+  evidence: https://github.com/caseybecking/obsidian-linear-plugin
+  app: Linear
+  listing_count: 2
+  category: Obsidian community plugin
+  partner_url: https://obsidian.md/plugins
+  contract_reference:
+    register: Obsidian community-plugins.json (obsidianmd/obsidian-releases@793b5211) + plugin repo README / manifest
+      / source
+    spec_file: null
+    role: obsidian-community-plugin:community
+    registered_name: caseybecking
+    register_id: https://github.com/caseybecking/obsidian-linear-plugin
+    matched_domain: linear.app
+    matched_by: domain+name-in-listing
+    matched_where: README
+    matched_host: linear.app
+    builder: community
+    plugins:
+    - linear
+    - linear-integration
+    downloads_context: 3645
+    signal_note: 'ONE edge per provider: a community plugin names the provider in its name/description AND carries
+      the provider''s domain or API host in its README or source. Builder is a named community author (not the provider).
+      Plugin and download counts are context, never counted.'
+    detected_by: sweep-obsidian-community-plugins.py
+    detected: '2026-10-22'
+  detected_by: sweep-obsidian-community-plugins.py
+  first_seen: '2026-10-22'
+  apps:
+  - Linear
+  - Linear Integration
 method: searched
 checked:
 - https://connectors.airbyte.com/files/registries/v0/cloud_registry.json
@@ -462,5 +518,10 @@ checked:
 - https://www.indexventures.com/companies/
 - https://www.sequoiacap.com/our-companies/
 - https://www.sequoiacap.com/sitemap.xml
+- raycast/integrations/raycast-integration-edges.yml
+- https://raw.githubusercontent.com/<repo>/HEAD/README.md
+- https://raw.githubusercontent.com/<repo>/HEAD/manifest.json
+- https://raw.githubusercontent.com/obsidianmd/obsidian-releases/793b52114f54b055b760ef47761ec5c93d689804/community-plugin-stats.json
+- https://raw.githubusercontent.com/obsidianmd/obsidian-releases/793b52114f54b055b760ef47761ec5c93d689804/community-plugins.json
 source: https://hightouch.com/docs/destinations/linear
 marketplace_apps: []
