@@ -1,4 +1,4 @@
-# linear-app
+# Linear
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,142 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Linear — issue tracking + project management for software teams
+Linear is an issue tracking and product development platform for software teams covering Intake, Plan, Build, Diffs (code review), and Monitor. The public developer surface is a GraphQL API at https://api.linear.app/graphql with OAuth 2.0 and personal API key auth, signed webhooks, a TypeScript SDK, an Agent SDK / Agent Interaction Guidelines for AI agents, and integrations with GitHub, Slack, Figma, Cursor, Codex, GitHub Copilot, and others. Serves 25,000+ product teams.
+
+**Areas:** Project Management · Issue Tracking · Productivity · Software-as-a-Service · GraphQL · Developer Tools · Agents
+
+## Linear on APIs.io
+
+Everything profiled for Linear is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/linear-app/](https://apis.io/providers/linear-app/)** — or go straight to one of the APIs or properties below.
+
+### APIs (4)
+
+- [Linear GraphQL API](https://apis.io/apis/linear-app/linear-graphql-api/) — Single GraphQL endpoint exposing Linear's full data model - issues, projects, initiatives, cycles, teams, users, comments, documents, customers, customer…
+- [Linear Webhooks](https://apis.io/apis/linear-app/linear-webhooks/) — Outbound webhooks for data-change events across Issues, Issue attachments, Issue comments, Issue labels, Comment reactions, Projects, Project updates,…
+- [Linear OAuth 2.0](https://apis.io/apis/linear-app/linear-oauth/) — OAuth 2.0 authorization-code and PKCE flows for third-party apps. Authorize at https://linear.app/oauth/authorize, exchange tokens at…
+- [Linear Agents API](https://apis.io/apis/linear-app/linear-agents-api/) — Capabilities for AI agents to operate as first-class actors inside Linear - Agent Interaction Guidelines (AIG), signals, and best-practice patterns for…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### GraphQL (1)
+
+GraphQL schemas.
+
+- [Linear GraphQL API](https://apis.io/graphqls/linear-app/linear-app-graphql/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [linear-app](https://apis.io/servers/linear-app/linear-app/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Linear App Agentic Access](https://apis.io/agentic-access/linear-app/linear-app-agentic-access/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Linear App Domain Security](https://apis.io/security/linear-app/linear-app-domain-security/)
+- [Linear App Trust Center](https://apis.io/security/linear-app/linear-app-trust-center/)
+- [Linear App Vulnerability Disclosure](https://apis.io/security/linear-app/linear-app-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Linear App Scopes](https://apis.io/scopes/linear-app/linear-app-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Linear App Plans Pricing](https://apis.io/plans/linear-app/linear-app-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Linear App Rate Limits](https://apis.io/rate-limits/linear-app/linear-app-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Linear App Finops](https://apis.io/finops/linear-app/linear-app-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://linear.app)
+- [Documentation](https://linear.app/docs)
+- [API reference](https://linear.app/developers)
+- [Pricing](https://linear.app/pricing)
+- [Changelog](https://linear.app/changelog)
+- [Blog](https://linear.app/blog)
+- [Security](https://linear.app/security)
+- [Terms of service](https://linear.app/terms)
+- [Privacy policy](https://linear.app/privacy)
+- [GitHub](https://github.com/linear)
+- [Status](https://linearstatus.com/)
+
+## API Evangelist rating
+
+**Kin Score 38.1** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 63.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 60.5 |
+| Developer ergonomics | 42.9 |
+| Access clarity | 57.9 |
+
+**Agent readiness 35.5** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | unknown |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 40.2** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/linear-app/](https://apis.io/providers/linear-app/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Linear: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/linear-app/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
